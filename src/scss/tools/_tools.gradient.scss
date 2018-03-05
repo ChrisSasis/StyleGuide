@@ -1,0 +1,11 @@
+/*  
+ *  Gradients 
+ *  Multiple colors not included
+ *  
+*/
+/* Linear any direction or angle */
+
+@mixin linear-direction ($dir, $first,$second) {
+	background: linear-gradient($dir, $first, $second);
+}
+

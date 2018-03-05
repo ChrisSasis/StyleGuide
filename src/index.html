@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Styleguide</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+
+		<div class="sg-wrap">
+			<h1 class="sg-title">CSS</h1>
+			
+			<div class="sg-content">
+				<h2 class="sg-title--secondary">COLORS</h2>
+				
+				<div class="sg-card sg-card--color sg-main">
+					<div class="sg-color"></div>
+					<div class="sg-color--name">Brand Color</div>
+					<div class="sg-color--hex">#f9a728</div>
+					<div class="sg-code">$brand-main</div>
+				</div>
+
+				<div class="sg-card sg-card--color sg-main--darken">
+					<div class="sg-color"></div>
+					<div class="sg-color--name">Brand Color Darken</div>
+					<div class="sg-color--hex">#dc8a0a</div>
+					<div class="sg-code">$brand-main-darken</div>
+				</div>
+
+				<div class="sg-card sg-card--color sg-secondary">
+					<div class="sg-color"></div>
+					<div class="sg-color--name">Brand Secondary</div>
+					<div class="sg-color--hex">#22BEF1</div>
+					<div class="sg-code">$brand-secondary</div>
+				</div>
+
+				<div class="sg-card sg-card--color sg-secondary--darken">
+					<div class="sg-color"></div>
+					<div class="sg-color--name">Brand Secondary Darken</div>
+					<div class="sg-color--hex">#008080</div>
+					<div class="sg-code">$brand-secondary-darken</div>
+				</div>
+
+				<div class="sg-card sg-card--color sg-error">
+					<div class="sg-color"></div>
+					<div class="sg-color--name">Error</div>
+					<div class="sg-color--hex">#D50000</div>
+					<div class="sg-code">$error</div>
+				</div>
+
+				<div class="sg-card sg-card--color sg-success">
+					<div class="sg-color"></div>
+					<div class="sg-color--name">Success</div>
+					<div class="sg-color--hex">#4CAF50</div>
+					<div class="sg-code">$success</div>
+				</div>
+
+				<div class="sg-card sg-card--color sg-default">
+					<div class="sg-color"></div>
+					<div class="sg-color--name">default</div>
+					<div class="sg-color--hex">#E0E0E0</div>
+					<div class="sg-code">$default</div>
+				</div>
+
+				<div class="sg-card sg-card--color sg-warning">
+					<div class="sg-color"></div>
+					<div class="sg-color--name">warning</div>
+					<div class="sg-color--hex">#FF3D00</div>
+					<div class="sg-code">$warning</div>
+				</div>
+			</div>
+
+			<div class="sg-content">
+				<h2 class="sg-title--secondary">TYPOGRAPHY</h2>
+
+				<div class="sg-card sg-fontLightest">
+					<h4 class="sg-font--name">Roboto Lightest</h4>
+					<div class="sg-code">$lightest = 100</div>
+				</div>
+
+				<div class="sg-card sg-fontLighter">
+					<h4 class="sg-font--name">Roboto Lighter</h4>
+					<div class="sg-code">$lighter = 200</div>
+				</div>
+
+				<div class="sg-card sg-fontLight">
+					<h4 class="sg-font--name">Roboto Light</h4>
+					<div class="sg-code">$light = 300</div>
+				</div>
+
+				<div class="sg-card sg-fontRegular">
+					<h4 class="sg-font--name">Roboto Regular</h4>
+					<div class="sg-code">$regular = 400</div>
+				</div>
+
+				<div class="sg-card sg-fontSemiMedium">
+					<h4 class="sg-font--name">Roboto Semi-Medium</h4>
+					<div class="sg-code">$semi-medium = 500</div>
+				</div>
+
+				<div class="sg-card sg-fontMedium">
+					<h4 class="sg-font--name">Roboto Medium</h4>
+					<div class="sg-code">$medium = 600</div>
+				</div>
+
+				<div class="sg-card sg-fontBold">
+					<h4 class="sg-font--name">Roboto Bold</h4>
+					<div class="sg-code">$bold = 700</div>
+				</div>
+
+				<div class="sg-card sg-fontBolder">
+					<h4 class="sg-font--name">Roboto Bolder</h4>
+					<div class="sg-code">$bolder = 800</div>
+				</div>
+
+				<div class="sg-card sg-fontBoldest">
+					<h4 class="sg-font--name">Roboto Boldest</h4>
+					<div class="sg-code">$boldest = 900</div>
+				</div>
+
+				<div class="sg-card">
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel delectus, vero consectetur a accusamus facere odio fuga tempora. Aut at modi dignissimos voluptatibus corporis quasi mollitia fugit hic porro cupiditate.</p>
+				</div>
+
+				<div class="sg-card">
+					<p class="sg-ellipsis">This is an ellipsis mixin. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eius aliquam odit incidunt fuga impedit ipsum iste.</p>
+					<div class="sg-code">@mixin text-truncate</div>
+				</div>
+			</div>
+
+			<div class="sg-content">
+				<h2 class="sg-title--secondary">BUTTONS</h2>
+				
+				<div class="sg-card sg-buttons">
+					<button class="o-button o-button__main">Button</button>
+					<div class="sg-code">.o-button__main</div>
+				</div>
+
+				<div class="sg-card sg-buttons">
+					<button class="o-button o-button__secondary">Button</button>
+					<div class="sg-code">.o-button__secondary</div>
+				</div>
+				
+				<div class="sg-card sg-buttons">
+					<button class="o-button o-button__default">Button</button>
+					<div class="sg-code">.o-button__default</div>
+				</div>
+
+				<h5 class="sg-title--secondary">icons</h5>
+
+				<div class="sg-card sg-buttons">
+
+					<button class="o-button o-button__main">
+						<i class="material-icons ">face</i>
+					</button>
+
+					<div class="sg-code">/* add an icon inside */</div>
+				</div>
+
+				<div class="sg-card sg-buttons">
+					<button class="o-button o-button__main">
+
+						<div class="o-button__icon">
+							<i class="material-icons">face</i>
+						</div>
+						<span class="o-button__text">Button w/ icons</span>
+						
+					</button>
+
+					<button class="o-button o-button__main">
+
+						<span class="o-button__text">Button w/ icons</span>
+						<div class="o-button__icon">
+							<i class="material-icons">face</i>
+						</div>
+
+					</button>
+
+					<div class="sg-code">/* .o-button__icons for icons, .o-button__text for text align to the icon*/</div>
+				</div>
+			</div>
+
+			<div class="sg-content">
+				<h2 class="sg-title--secondary">Gradients</h2>
+				<div class="sg-card sg-gradients">
+					<div class="sg-gradientBox sg-linear--ttb"></div>
+					<div class="sg-gradient--name"><strong>(Mixins)</strong> Linear </div>
+					<p class="sg-paragraph">
+						<strong>$dir:</strong> direction or angle of linear<br/>
+						<strong>$first:</strong> first color<br/>
+						<strong>$second:</strong> second color
+					</p>
+					<div class="sg-code">@include $linear-direction($dir, $first, $second)</div>
+				</div>
+			</div>
+
+			
+		</div><!-- end of sg-wrap -->
+	
+	</body>
+</html>
+
