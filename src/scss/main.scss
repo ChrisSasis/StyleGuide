@@ -22,6 +22,7 @@
 @import "tools/tools.gradient";
 @import "tools/tools.border";
 @import "tools/tools.ellipsis";
+@import "tools/tools.inlineblock";
 
 
 /* 
@@ -29,6 +30,7 @@
  * HTML elements
 */
 @import "elements/elements.page";
+@import "elements/elements.input";
 @import "elements/elements.heading";
 
 
@@ -44,6 +46,7 @@
  * .o-
 */
 @import "objects/objects.buttons";
+@import "objects/objects.input";
 
 /* 
  * COMPONENTS 
