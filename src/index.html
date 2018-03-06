@@ -8,11 +8,23 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body>
-
+		
+		<div class="sg-menusidebar">
+			<ul>
+				<li><a href="#colors">COLORS</a></li>
+				<li><a href="#typography">TYPOGRAPHY</a></li>
+				<li><a href="#buttons">BUTTONS</a></li>
+				<li><a href="#gradient">GRADIENT</a></li>
+				<li><a href="#input">INPUT</a></li>
+				<li><a href="#hyperlink">HYPERLINK</a></li>
+				<li><a href="#hyperlink">LIST</a></li>
+				<li><a href="#hyperlink">TABLE</a></li>
+			</ul>
+		</div>
 		<div class="sg-wrap">
 			<h1 class="sg-title">CSS</h1>
 			
-			<div class="sg-content">
+			<div class="sg-content" id="colors">
 				<h2 class="sg-title--secondary">COLORS</h2>
 				
 				<div class="sg-card sg-card--color sg-main">
@@ -72,55 +84,60 @@
 				</div>
 			</div>
 
-			<div class="sg-content">
+			<div class="sg-content" id="typography">
 				<h2 class="sg-title--secondary">TYPOGRAPHY</h2>
 
-				<div class="sg-card sg-fontLightest">
+				<div class="sg-card sg-typoCard sg-fontLightest">
 					<h4 class="sg-font--name">Roboto Lightest</h4>
 					<div class="sg-code">$lightest = 100</div>
 				</div>
 
-				<div class="sg-card sg-fontLighter">
+				<div class="sg-card sg-typoCard sg-fontLighter">
 					<h4 class="sg-font--name">Roboto Lighter</h4>
 					<div class="sg-code">$lighter = 200</div>
 				</div>
 
-				<div class="sg-card sg-fontLight">
+				<div class="sg-card sg-typoCard sg-fontLight">
 					<h4 class="sg-font--name">Roboto Light</h4>
 					<div class="sg-code">$light = 300</div>
 				</div>
 
-				<div class="sg-card sg-fontRegular">
+				<div class="sg-card sg-typoCard sg-fontRegular">
 					<h4 class="sg-font--name">Roboto Regular</h4>
 					<div class="sg-code">$regular = 400</div>
 				</div>
 
-				<div class="sg-card sg-fontSemiMedium">
+				<div class="sg-card sg-typoCard sg-fontSemiMedium">
 					<h4 class="sg-font--name">Roboto Semi-Medium</h4>
 					<div class="sg-code">$semi-medium = 500</div>
 				</div>
 
-				<div class="sg-card sg-fontMedium">
+				<div class="sg-card sg-typoCard sg-fontMedium">
 					<h4 class="sg-font--name">Roboto Medium</h4>
 					<div class="sg-code">$medium = 600</div>
 				</div>
 
-				<div class="sg-card sg-fontBold">
+				<div class="sg-card sg-typoCard sg-fontBold">
 					<h4 class="sg-font--name">Roboto Bold</h4>
 					<div class="sg-code">$bold = 700</div>
 				</div>
 
-				<div class="sg-card sg-fontBolder">
+				<div class="sg-card sg-typoCard sg-fontBolder">
 					<h4 class="sg-font--name">Roboto Bolder</h4>
 					<div class="sg-code">$bolder = 800</div>
 				</div>
 
-				<div class="sg-card sg-fontBoldest">
+				<div class="sg-card sg-typoCard sg-fontBoldest">
 					<h4 class="sg-font--name">Roboto Boldest</h4>
 					<div class="sg-code">$boldest = 900</div>
 				</div>
 
-				<div class="sg-card">
+				<div class="sg-card sg-typoCard">
+					<p class="sg-ellipsis">This is an ellipsis mixin. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eius aliquam odit incidunt fuga impedit ipsum iste.</p>
+					<div class="sg-code">@mixin text-truncate</div>
+				</div>
+
+				<div class="sg-card sg-typoCard">
 					<h1>Heading 1</h1>
 					<h2>Heading 2</h2>
 					<h3>Heading 3</h3>
@@ -129,14 +146,9 @@
 					<h6>Heading 6</h6>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel delectus, vero consectetur a accusamus facere odio fuga tempora. Aut at modi dignissimos voluptatibus corporis quasi mollitia fugit hic porro cupiditate.</p>
 				</div>
-
-				<div class="sg-card">
-					<p class="sg-ellipsis">This is an ellipsis mixin. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eius aliquam odit incidunt fuga impedit ipsum iste.</p>
-					<div class="sg-code">@mixin text-truncate</div>
-				</div>
 			</div>
 
-			<div class="sg-content">
+			<div class="sg-content" id="buttons">
 				<h2 class="sg-title--secondary">BUTTONS</h2>
 				
 				<div class="sg-card sg-buttons">
@@ -188,7 +200,7 @@
 				</div>
 			</div>
 
-			<div class="sg-content">
+			<div class="sg-content" id="gradient">
 				<h2 class="sg-title--secondary">Gradients</h2>
 				<div class="sg-card sg-gradients">
 					<div class="sg-gradientBox sg-linear--ttb"></div>
@@ -202,7 +214,7 @@
 				</div>
 			</div>
 
-			<div class="sg-content">
+			<div class="sg-content" id="input">
 				<h2 class="sg-title--secondary">Inputs</h2>
 				
 				<div class="sg-card">
@@ -220,6 +232,12 @@
 					<input type="checkbox" id="checkbox">
 					<label for="checkbox">Checkbox Button</label>
 					<div class="sg-code">< input type="checkbox" ></div>
+
+					<select name="" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+					<div class="sg-code">< select > < option > </ option > </ select></div>
 				</div>
 
 				<h5 class="sg-title--secondary">Custom Inputs</h5>
@@ -234,10 +252,142 @@
 						<input type="text" placeholder="Add some text...">
 					</div>
 
-				</div>
+					<div class="sg-name">Input w/ Button</div>
 
+					<div class="o-input--holderButton">
+						<input type="text">
+						<input type="submit" class="o-button o-button__main">
+					</div>
+
+				</div>
 			</div>
 
+			<div class="sg-content" id="hyperlink">
+				<h2 class="sg-title--secondary">Hyperlink</h2>
+				<div class="sg-card">
+					<a href="javascript:void(0);">
+						Link
+					</a>
+				</div>
+			</div>
+
+			<div class="sg-content" id="list">
+				<h2 class="sg-title--secondary">LIST</h2>
+
+				<ul class="o-list__none">
+					<li>This is a list item with style type</li>
+				</ul>
+				<ul class="o-list__disc">
+					<li>
+						This is a list item in an unordered list
+						<ul class="o-list__disc">
+							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="o-list__decimal">
+					<li>
+						This is a list item in an decimal list
+
+						<ul class="o-list__decimalZero">
+							<li>This is a children list</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="o-list__upperAlpha">
+					<li>
+						This is a list item in a lower alpha list
+					</li>
+				</ul>
+				
+				<ul class="o-list__lowerAlpha">
+					<li>
+						This is a list item in a lower alpha list
+					</li>
+				</ul>
+
+				<ul class="o-list__lowerRoman">
+					<li>
+						This is a list item in a lower alpha list
+					</li>
+				</ul>
+
+				<ul class="o-list__upperRoman">
+					<li>
+						This is a list item in a lower alpha list
+					</li>
+				</ul>
+
+				<ul class="o-list__square">
+					<li>
+						This is a list item in a lower alpha list
+					</li>
+				</ul>
+			</div>
+
+			<div class="sg-content" id="table">
+				<h2 class="sg-title--secondary">TABLE</h2>
+
+				<table class="o-table o-table__border o-table__collapse">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Example Text</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Bruce Wayne</td>
+							<td>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error est porro deserunt blanditiis eos, labore nostrum quasi tempora explicabo? Impedit commodi dolorum eaque, corrupti ullam harum sint, cumque mollitia alias!
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Diana Prince</td>
+							<td>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error est porro deserunt blanditiis eos, labore nostrum quasi tempora explicabo? Impedit commodi dolorum eaque, corrupti ullam harum sint, cumque mollitia alias!
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="sg-content" id="inline-elements">
+				<h2 class="sg-title--secondary">Inline Elements</h2>
+				<p>
+					<a href="javascript:void(0);">This text is a link</a>
+				</p>
+				<p>
+					<i>This text is an italic</i>
+				</p>
+				<p>
+					<strong>This element is bold</strong>
+				</p>
+				<p>
+					<u>This text used for underlined element</u>
+				</p>
+				<p>
+					<del>This text mark as delete</del>
+				</p>
+				<p>
+					Superscript: <samp>8<sup>th</sup> of August</samp>
+				</p>
+				<p>
+					Subscript: <samp>H<sub>2</sub>O</samp>
+				</p>
+				<p>
+					<mark>Mark element</mark>
+				</p>
+				<p>
+					<q>This text has a quote</q>
+				</p>
+
+			</div>
 			
 		</div><!-- end of sg-wrap -->
 	

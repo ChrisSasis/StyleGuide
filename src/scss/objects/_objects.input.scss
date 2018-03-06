@@ -22,3 +22,24 @@ input[type="radio"], input[type="checkbox"] {
 	margin:0;
 	@include inline-block(inline-block, middle);
 }
+
+select{
+	width:100%;
+}
+
+/* input with button */
+.o-input--holderButton {
+	input{
+		width:79%;
+		display: inline-block;
+		padding: $padding-m;
+	}
+
+	.o-button {
+		width:20%;
+		display: inline-block;
+		margin-left:-5px;
+		@include border-top-radius(0);
+		@include border-bottom-radius(0);
+	}
+}

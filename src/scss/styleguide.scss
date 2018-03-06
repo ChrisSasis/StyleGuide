@@ -30,6 +30,7 @@
 	background-color:$white;
 	border:1px solid $default;
 	padding:$padding-m;
+	margin-bottom: 3px;
 }
 
 /* colors */
@@ -134,6 +135,12 @@
 
 /* TYPOGRAPHY */
 
+
+.sg-typoCard {
+	width:48%;
+	display: inline-block;
+	vertical-align: top;
+}
 .sg-fontLightest{
 	.sg-font--name{
 		font-weight: $lightest;
@@ -215,4 +222,25 @@
 	@include linear-direction(to left, $brand-main, $brand-secondary);
 }
 
-/* Inputs */
+.sg-menusidebar {
+	background:$brand-main;
+	width:10%;
+	position: fixed;
+	top:20%;
+	ul {
+		list-style-type: none;
+		margin:0;
+		padding:0;
+	}
+
+	a{
+		padding:10px;
+		display: block;
+		text-decoration: none;
+		color:$white;
+
+		&:hover{
+			background: $brand-main-darken;
+		}
+	}
+}

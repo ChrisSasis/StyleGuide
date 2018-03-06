@@ -1,3 +1,4 @@
+@import "~susy/sass/susy";
 /* 
  * SETTINGS 
  * variables
@@ -11,6 +12,7 @@
  * 3rd Party
 */
 @import "generic/generic.reset";
+@import "generic/generic.clearfix";
 
 /* 
  * TOOLS
@@ -47,6 +49,8 @@
 */
 @import "objects/objects.buttons";
 @import "objects/objects.input";
+@import "objects/objects.list";
+@import "objects/objects.table";
 
 /* 
  * COMPONENTS 
