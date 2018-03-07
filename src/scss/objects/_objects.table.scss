@@ -1,9 +1,10 @@
-
 .o-table__border{
 	@include border-all(1px, solid, $brand-main);
+	
 	th, td{
 		@include border-all(1px, solid, $brand-main);
 	}
+	
 }
 
 .o-table__collapse {
