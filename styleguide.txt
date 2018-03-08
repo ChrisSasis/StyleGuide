@@ -1,0 +1,31 @@
+/**** Variables ****/
+- Colors 								settings.color.scss
+- Font Family/ Font weight				settings.font.scss
+- Spacing (padding, margin)				settings.spacing.scss
+
+/**** Generic ****/
+- Reset									generic.reset.scss
+- Clearfix								generic.clearfix.scss
+
+/**** Tools : Mixins & Functions ****/
+- Box Shadow / Text Shadow 				settings.shadow.scss
+- Border Style							settings.border.scss
+- Radius (border)						settings.corner.scss
+- Ellipsis								settings.ellipsis.scss
+- Font in em 							settings.font.scss
+- Gradient 								settings.gradient.scss
+- Hover effect							settings.hover.scss
+- 
+
+/**** Elements ****/
+- Buttons								settings.buttons.scss
+- Input 								settings.input.scss
+- A tag									settings.link.scss
+- Table 								settings.table.scss
+- Inline								settings.inline.scss
+- List									settings.list.scss
+- 
+
+/**** Objects ****/
+
+/**** Components ****/
