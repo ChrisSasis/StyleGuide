@@ -1,0 +1,4 @@
+@mixin align-center($width, $margin) {
+	width: $width;
+	margin:$margin auto;
+}

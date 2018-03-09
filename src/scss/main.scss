@@ -3,38 +3,43 @@
  * SETTINGS 
  * variables
 */
+@import 'settings/settings.color.scss';
+@import 'settings/settings.font.scss';
+@import 'settings/settings.spacing.scss';
 
-@import "settings/settings.color";
-@import "settings/settings.global";
 
 /* 
  * GENERIC 
  * 3rd Party
 */
-@import "generic/generic.reset";
-@import "generic/generic.clearfix";
+@import 'generic/generic.reset.scss';
+@import 'generic/generic.clearfix.scss';
 
 /* 
  * TOOLS
  * Mixins and function (no actual CSS output) 
 */
-@import "tools/tools.font";
-@import "tools/tools.buttons";
-@import "tools/tools.radius";
-@import "tools/tools.gradient";
-@import "tools/tools.border";
-@import "tools/tools.ellipsis";
-@import "tools/tools.inlineblock";
+@import 'tools/tools.shadow.scss';
+@import 'tools/tools.border.scss';
+@import 'tools/tools.corner.scss';
+@import 'tools/tools.ellipsis.scss';
+@import 'tools/tools.font.scss';
+@import 'tools/tools.hover.scss';
+@import 'tools/tools.align.scss';
 
 
 /* 
  * ELEMENTS
  * HTML elements
 */
-@import "elements/elements.page";
-@import "elements/elements.input";
-@import "elements/elements.heading";
-
+@import 'elements/elements.body.scss';
+@import 'elements/elements.button.scss';
+@import 'elements/elements.input.scss';
+@import 'elements/elements.link.scss';
+@import 'elements/elements.table.scss';
+@import 'elements/elements.inline.scss';
+@import 'elements/elements.list.scss';
+@import 'elements/elements.heading.scss';
 
 /* 
  * TRUMPS
@@ -47,16 +52,17 @@
  * Layout Classes
  * .o-
 */
-@import "objects/objects.buttons";
-@import "objects/objects.input";
-@import "objects/objects.list";
-@import "objects/objects.table";
+@import 'objects/objects.button.scss';
+@import 'objects/objects.input.scss';
+@import 'objects/objects.image.scss';
+@import 'objects/objects.icon.scss';
 
 /* 
  * COMPONENTS 
  * UI Classes
  * .c-
 */
+@import 'components/component.header.scss';
 
 
 

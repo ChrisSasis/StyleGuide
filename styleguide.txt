@@ -8,24 +8,33 @@
 - Clearfix								generic.clearfix.scss
 
 /**** Tools : Mixins & Functions ****/
-- Box Shadow / Text Shadow 				settings.shadow.scss
-- Border Style							settings.border.scss
-- Radius (border)						settings.corner.scss
-- Ellipsis								settings.ellipsis.scss
-- Font in em 							settings.font.scss
-- Gradient 								settings.gradient.scss
-- Hover effect							settings.hover.scss
-- 
+- Box Shadow / Text Shadow 				tools.shadow.scss
+- Border Style							tools.border.scss
+- Radius (border)						tools.corner.scss
+- Ellipsis								tools.ellipsis.scss
+- Font in em 							tools.font.scss
+- Hover effect							tools.hover.scss
+- Alignment								tools.align.scss
 
 /**** Elements ****/
-- Buttons								settings.buttons.scss
-- Input 								settings.input.scss
-- A tag									settings.link.scss
-- Table 								settings.table.scss
-- Inline								settings.inline.scss
-- List									settings.list.scss
-- 
+- Buttons								elements.buttons.scss
+- Input 								elements.input.scss
+- A tag									elements.link.scss
+- Table 								elements.table.scss
+- Inline								elements.inline.scss
+- List									elements.list.scss
+- Heading								elements.heading.scss
 
 /**** Objects ****/
+- Buttons 								object.buttons.scss
+- input 								object.input.scss
+- Image 								object.image.scss
+- Icon 									object.icon.scss
+
 
 /**** Components ****/
+- header 								component.header.scss
+
+
+/******************************************************************/
+MIXINS

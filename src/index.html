@@ -8,396 +8,406 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body>
-		
-		<div class="sg-menusidebar">
-			<ul>
-				<li><a href="#colors">COLORS</a></li>
-				<li><a href="#typography">TYPOGRAPHY</a></li>
-				<li><a href="#buttons">BUTTONS</a></li>
-				<li><a href="#gradient">GRADIENT</a></li>
-				<li><a href="#input">INPUT</a></li>
-				<li><a href="#hyperlink">HYPERLINK</a></li>
-				<li><a href="#list">LIST</a></li>
-				<li><a href="#table">TABLE</a></li>
-				<li><a href="#inline-elements">INLINE ELEMENT</a></li>
-			</ul>
-		</div>
 		<div class="sg-wrap">
-			<h1 class="sg-title">CSS</h1>
 			
-			<div class="sg-content" id="colors">
-				<h2 class="sg-title--secondary">COLORS</h2>
+			<!-- mixins -->
+			<section class="sg-section">
+				<h1 class="sg-title">MIXINS</h1>
 				
-				<div class="sg-card sg-card--color sg-main">
-					<div class="sg-color"></div>
-					<div class="sg-color--name">Brand Color</div>
-					<div class="sg-color--hex">#f9a728</div>
-					<div class="sg-code">$brand-main</div>
-				</div>
+				<!-- ALIGNMENT -->
+				<div class="sg-content">
+					<h4 class="sg-title--secondary">Alignment</h4>
+					
+					<div class="sg-example sg-aligncenter">
+						<span>@include align-center(200px,0)</span>
+					</div>
 
-				<div class="sg-card sg-card--color sg-main--darken">
-					<div class="sg-color"></div>
-					<div class="sg-color--name">Brand Color Darken</div>
-					<div class="sg-color--hex">#dc8a0a</div>
-					<div class="sg-code">$brand-main-darken</div>
-				</div>
-
-				<div class="sg-card sg-card--color sg-secondary">
-					<div class="sg-color"></div>
-					<div class="sg-color--name">Brand Secondary</div>
-					<div class="sg-color--hex">#22BEF1</div>
-					<div class="sg-code">$brand-secondary</div>
-				</div>
-
-				<div class="sg-card sg-card--color sg-secondary--darken">
-					<div class="sg-color"></div>
-					<div class="sg-color--name">Brand Secondary Darken</div>
-					<div class="sg-color--hex">#008080</div>
-					<div class="sg-code">$brand-secondary-darken</div>
-				</div>
-
-				<div class="sg-card sg-card--color sg-error">
-					<div class="sg-color"></div>
-					<div class="sg-color--name">Error</div>
-					<div class="sg-color--hex">#D50000</div>
-					<div class="sg-code">$error</div>
-				</div>
-
-				<div class="sg-card sg-card--color sg-success">
-					<div class="sg-color"></div>
-					<div class="sg-color--name">Success</div>
-					<div class="sg-color--hex">#4CAF50</div>
-					<div class="sg-code">$success</div>
-				</div>
-
-				<div class="sg-card sg-card--color sg-default">
-					<div class="sg-color"></div>
-					<div class="sg-color--name">default</div>
-					<div class="sg-color--hex">#E0E0E0</div>
-					<div class="sg-code">$default</div>
-				</div>
-
-				<div class="sg-card sg-card--color sg-warning">
-					<div class="sg-color"></div>
-					<div class="sg-color--name">warning</div>
-					<div class="sg-color--hex">#FF3D00</div>
-					<div class="sg-code">$warning</div>
-				</div>
-			</div>
-
-			<div class="sg-content" id="typography">
-				<h2 class="sg-title--secondary">TYPOGRAPHY</h2>
-
-				<div class="sg-card sg-typoCard sg-fontLightest">
-					<h4 class="sg-font--name">Roboto Lightest</h4>
-					<div class="sg-code">$lightest = 100</div>
-				</div>
-
-				<div class="sg-card sg-typoCard sg-fontLighter">
-					<h4 class="sg-font--name">Roboto Lighter</h4>
-					<div class="sg-code">$lighter = 200</div>
-				</div>
-
-				<div class="sg-card sg-typoCard sg-fontLight">
-					<h4 class="sg-font--name">Roboto Light</h4>
-					<div class="sg-code">$light = 300</div>
-				</div>
-
-				<div class="sg-card sg-typoCard sg-fontRegular">
-					<h4 class="sg-font--name">Roboto Regular</h4>
-					<div class="sg-code">$regular = 400</div>
-				</div>
-
-				<div class="sg-card sg-typoCard sg-fontSemiMedium">
-					<h4 class="sg-font--name">Roboto Semi-Medium</h4>
-					<div class="sg-code">$semi-medium = 500</div>
-				</div>
-
-				<div class="sg-card sg-typoCard sg-fontMedium">
-					<h4 class="sg-font--name">Roboto Medium</h4>
-					<div class="sg-code">$medium = 600</div>
-				</div>
-
-				<div class="sg-card sg-typoCard sg-fontBold">
-					<h4 class="sg-font--name">Roboto Bold</h4>
-					<div class="sg-code">$bold = 700</div>
-				</div>
-
-				<div class="sg-card sg-typoCard sg-fontBolder">
-					<h4 class="sg-font--name">Roboto Bolder</h4>
-					<div class="sg-code">$bolder = 800</div>
-				</div>
-
-				<div class="sg-card sg-typoCard sg-fontBoldest">
-					<h4 class="sg-font--name">Roboto Boldest</h4>
-					<div class="sg-code">$boldest = 900</div>
-				</div>
-
-				<div class="sg-card sg-typoCard">
-					<p class="sg-ellipsis">This is an ellipsis mixin. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eius aliquam odit incidunt fuga impedit ipsum iste.</p>
-					<div class="sg-code">@mixin text-truncate</div>
-				</div>
-
-				<div class="sg-card sg-typoCard">
-					<h1>Heading 1</h1>
-					<h2>Heading 2</h2>
-					<h3>Heading 3</h3>
-					<h4>Heading 4</h4>
-					<h5>Heading 5</h5>
-					<h6>Heading 6</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel delectus, vero consectetur a accusamus facere odio fuga tempora. Aut at modi dignissimos voluptatibus corporis quasi mollitia fugit hic porro cupiditate.</p>
-				</div>
-			</div>
-
-			<div class="sg-content" id="buttons">
-				<h2 class="sg-title--secondary">BUTTONS</h2>
-				
-				<div class="sg-card sg-buttons">
-					<button class="o-button o-button__main">Button</button>
-					<div class="sg-code">.o-button__main</div>
-				</div>
-
-				<div class="sg-card sg-buttons">
-					<button class="o-button o-button__secondary">Button</button>
-					<div class="sg-code">.o-button__secondary</div>
-				</div>
-				
-				<div class="sg-card sg-buttons">
-					<button class="o-button o-button__default">Button</button>
-					<div class="sg-code">.o-button__default</div>
-				</div>
-
-				<h5 class="sg-title--secondary">icons</h5>
-
-				<div class="sg-card sg-buttons"> 
-
-					<button class="o-button o-button__main">
-						<i class="material-icons ">face</i>
-					</button>
-
-					<div class="sg-code">/* add an icon inside */</div>
-				</div>
-
-				<div class="sg-card sg-buttons">
-					<button class="o-button o-button__main">
-
-						<div class="o-button__icon">
-							<i class="material-icons">face</i>
-						</div>
-						<span class="o-button__text">Button w/ icons</span>
-						
-					</button>
-
-					<button class="o-button o-button__main">
-
-						<span class="o-button__text">Button w/ icons</span>
-						<div class="o-button__icon">
-							<i class="material-icons">face</i>
-						</div>
-
-					</button>
-
-					<div class="sg-code">/* .o-button__icons for icons, .o-button__text for text align to the icon*/</div>
-				</div>
-			</div>
-
-			<div class="sg-content" id="gradient">
-				<h2 class="sg-title--secondary">Gradients</h2>
-				<div class="sg-card sg-gradients">
-					<div class="sg-gradientBox sg-linear--ttb"></div>
-					<div class="sg-gradient--name"><strong>(Mixins)</strong> Linear </div>
-					<p class="sg-paragraph">
-						<strong>$dir:</strong> direction or angle of linear<br/>
-						<strong>$first:</strong> first color<br/>
-						<strong>$second:</strong> second color
+					<code>@mixin align-center($width, $margin)</code>
+					<p>
+						<strong>$width: </strong>
+						<span> width of the container</span>
 					</p>
-					<div class="sg-code">@include $linear-direction($dir, $first, $second)</div>
-				</div>
-			</div>
-
-			<div class="sg-content" id="input">
-				<h2 class="sg-title--secondary">Inputs</h2>
-				
-				<div class="sg-card">
-					
-					<input type="text">
-					<div class="sg-code">< input type="text" ></div>
-
-					<textarea name="" id="" cols="30" rows="10"></textarea>
-					<div class="sg-code">< textarea ></div>
-					
-					<input type="radio" id="radio">
-					<label for="radio">Radio Button</label>
-					<div class="sg-code">< input type="radio" ></div>
-					
-					<input type="checkbox" id="checkbox">
-					<label for="checkbox">Checkbox Button</label>
-					<div class="sg-code">< input type="checkbox" ></div>
-
-					<select name="" id="">
-						<option value="">1</option>
-						<option value="">2</option>
-					</select>
-					<div class="sg-code">< select > < option > </ option > </ select></div>
+					<p>
+						<strong>$margin: </strong>
+						<span>margin of the container top and bottom only</span>
+					</p>
 				</div>
 
-				<h5 class="sg-title--secondary">Custom Inputs</h5>
-				
-				<div class="sg-card">
-					<div class="sg-name">Input w/ Icon</div>
+				<!-- BORDER -->
+				<div class="sg-content">
+					<h4 class="sg-title--secondary">Border</h4>
 					
-					<div class="o-input--holder">
-						<div class="o-input__iconHolder">
-							<i class="material-icons">face</i>
-						</div>
-						<input type="text" placeholder="Add some text...">
+					<!-- border all-->
+					<div class="sg-example sg-borderall">
+						<span>@include border-all(1px,solid,green);</span>
+					</div>
+					
+					<code>@mixin border-all($width, $style, $color)</code>
+					
+					<!-- border top-->
+					<div class="sg-example sg-bordertop">
+						<span>@include border-top(5px, solid, green)</span>
+						
+					</div>
+					<code>@mixin border-top($width, $style, $color)</code>
+
+					<!-- border bottom-->
+					<div class="sg-example sg-borderbottom">
+						<span>@include border-bottom(5px, solid, green)</span>
+						
+					</div>
+					<code>@mixin border-bottom($width, $style, $color)</code>
+
+					<!-- border left-->
+					<div class="sg-example sg-borderleft">
+						<span>@include border-left(5px, solid, green)</span>
+						
+					</div>
+					<code>@mixin border-left($width, $style, $color)</code>
+
+					<!-- border right-->
+					<div class="sg-example sg-borderright">
+						<span>@include border-right(5px, solid, green)</span>
+						
+					</div>
+					<code>@mixin border-right($width, $style, $color)</code>
+					
+					<p>
+						<strong>$width: </strong>
+						<span>width/size/thick of the border</span>
+						<span> equivalent to 
+							<strong>border-width</strong>
+						</span>
+					</p>
+					<p>
+						<strong>$style: </strong>
+						<span>style of the border (solid,dashed, etc)</span>
+						<span> equivalent to 
+							<strong>border-style</strong>
+						</span>
+					</p>
+					<p>
+						<strong>$color: </strong>
+						<span>color of the border</span>
+						<span> equivalent to 
+							<strong>border-color</strong>
+						</span>
+					</p>
+				</div>
+
+				<!-- ELLIPSIS -->
+				<div class="sg-content">
+
+					<h4 class="sg-title--secondary">Ellipsis</h4>
+				
+					<div class="sg-example sg-ellipsis">
+						<p class="sg-for-ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem hic maiores, iusto, provident quaerat officia explicabo ipsa velit ipsum dignissimos aspernatur illo inventore libero animi cumque magnam at dolor modi!</p>
+					</div>
+					
+					<code>@include ellipsis</code>
+					<p>
+						<strong>@include ellipsis</strong> to your class then add a width
+					</p>
+				</div>
+
+				<!-- FONT MIXIN -->
+				<div class="sg-content">
+					<h4 class="sg-title--secondary">Font</h4>
+					<code>font-size:em( pixel size ex: 40 )</code>
+					<p>instead of px or % em use for responsive size of text</p>
+				</div>
+
+				<!-- HOVER -->
+				<div class="sg-content">
+					<h4 class="sg-title--secondary">Hover</h4>
+
+					<div class="sg-example sg-hoverbg">
+						<p>Background will change when hovering to this container</p>
 					</div>
 
-					<div class="sg-name">Input w/ Button</div>
+					<code>@include hover-bg($bg)</code>
 
-					<div class="o-input--holderButton">
-						<input type="text">
-						<input type="submit" class="o-button o-button__main">
+					<div class="sg-example sg-hovertextbg">
+						<p>Background and text will change when hovering to this container</p>
+					</div>
+
+					<code>@include hover-text-bg($bg, $text)</code>
+					<p>
+						<strong>$bg: </strong>
+						<span>background color</span>
+					</p>
+					<p>
+						<strong>$text: </strong>
+						<span>text color</span>
+					</p>
+				</div>
+
+				<!-- SHADOW -->
+				<div class="sg-content">
+					<h4 class="sg-title--secondary">Shadow</h4>
+					<div class="sg-example sg-boxshadow">
+						
+					</div>
+					<code>@include box-shadow($blur, $x, $y, $color)</code>
+					
+					<div class="sg-example sg-insetshadow">
+						
+					</div>
+					<code>@include inset-shadow($blur, $x, $y, $color)</code>
+
+					<div class="sg-example sg-textshadow">
+						<h3>HELLO! THIS IS TEXT SHADOW</h3>
+					</div>
+					<code>@include text-shadow($h-shadow, $v-shadow, $color)</code>
+					
+					<p>
+						<strong>$blur: </strong>
+						<span></span>	
+					</p>
+					<p>
+						<strong>$x: </strong>
+						<span>position of shadow from x-axis</span>	
+					</p>
+					<p>
+						<strong>$y: </strong>
+						<span>position of shadow from y-axis</span>	
+					</p>
+					<p>
+						<strong>$h-shadow: </strong>
+						<span>position of shadow from horizontal </span>	
+					</p>
+					<p>
+						<strong>$v-shadow: </strong>
+						<span>position of shadow from vaertical</span>	
+					</p>
+					<p>
+						<strong>$color: </strong>
+						<span>color of the shadow</span>	
+					</p>
+
+					<p>
+						<i>Note:  this is not flexible yet</i>
+					</p>
+				</div>
+			</section>
+
+			<!-- Variables-->
+			<section class="sg-section">
+				<h1 class="sg-title">Variables</h1>
+
+				<div class="sg-content sg-varcolor">
+					<h4 class="sg-title--secondary">Colors</h4>
+					
+					<div class="sg-example sg-color">
+						<h3 class="sg-title--secondary">Primary</h3>
+						
+						<p>
+							<strong>
+								$c-primary: color;
+							</strong>
+						</p>
+						<p>
+							<strong>
+								$c-primary-lighten: color;
+							</strong>
+						</p>
+						<p>
+							<strong>
+								$c-primary-darken: color;
+							</strong>
+						</p>
+					</div>
+
+					<div class="sg-example sg-color">
+						<h3 class="sg-title--secondary">Secondary</h3>
+						
+						<p>
+							<strong>
+								$c-secondary: color;
+							</strong>
+						</p>
+						<p>
+							<strong>
+								$c-secondary-lighten: color;
+							</strong>
+						</p>
+						<p>
+							<strong>
+								$c-secondary-darken: color;
+							</strong>
+						</p>
+					</div>
+
+					<div class="sg-example sg-color">
+						<h3 class="sg-title--secondary">Others</h3>
+						
+						<p>
+							<strong>
+								$c-error: color;
+							</strong>
+						</p>
+						<p>
+							<strong>
+								$c-success: color;
+							</strong>
+						</p>
+						<p>
+							<strong>
+								$c-warning: color;
+							</strong>
+						</p>
+						<p>
+							<strong>
+								$c-white: color;
+							</strong>
+						</p>
+						<p>
+							<strong>
+								$c-black: color;
+							</strong>
+						</p>
 					</div>
 
 				</div>
-			</div>
 
-			<div class="sg-content" id="hyperlink">
-				<h2 class="sg-title--secondary">Hyperlink</h2>
-				<div class="sg-card">
+				<div class="sg-content sg-font">
+					<h4 class="sg-title--secondary">Fonts</h4>
 
-					<a href="javascript:void(0);">
-						Link
-					</a>
+					<div class="sg-example sg-varFont">
+						<p>
+							<strong>
+								$font-primary: 'Font style/ Google Fonts'
+							</strong>
+						</p>
+						<p>
+							<strong>
+								$font-secondary: 'Second font'
+							</strong>
+						</p>
+					</div>
 
-					<br/>
+					<div class="sg-example sg-varFont">
+						<h3 class="sg-title--secondary">FONT WEIGHT</h3>
 
-					<a href="#" target="__blank">New window</a>
-					<br/>
-					<a href="tel:*143#">Globe number *143#</a> <i> *NOTE: only works in mobile devices</i>
+						<p>
+							<strong>
+								$lightest: 100;
+							</strong>
+						</p>
+
+						<p>
+							<strong>
+								$lighter: 200;
+							</strong>
+						</p>
+
+						<p>
+							<strong>
+								$light: 300;
+							</strong>
+						</p>
+
+						<p>
+							<strong>
+								$regular: 300;
+							</strong>
+						</p>
+
+						<p>
+							<strong>
+								$semi-medium: 500;
+							</strong>
+						</p>
+
+						<p>
+							<strong>
+								$medium: 600;
+							</strong>
+						</p>
+
+						<p>
+							<strong>
+								$bold: 700;
+							</strong>
+						</p>
+
+						<p>
+							<strong>
+								$bolder: 800;
+							</strong>
+						</p>
+
+						<p>
+							<strong>
+								$boldest: 900;
+							</strong>
+						</p>
+					</div>
 				</div>
-			</div>
 
-			<div class="sg-content" id="list">
-				<h2 class="sg-title--secondary">LIST</h2>
+				<div class="sg-content sg-spacing">
+					<h1 class="sg-title--secondary">Spacing</h1>
+					
+					<div class="sg-example sg-varspacing">
+						<h3 class="sg-title--secondary">Padding</h3>
+						<p>
+							<strong>$p-none: 0</strong>
+						</p>
+						<p>
+							<strong>$p-xxs: 5px</strong>
+						</p>		
+						<p>
+							<strong>$p-xs: 10px</strong>
+						</p>
+						<p>
+							<strong>$p-s: 15px</strong>
+						</p>
+						<p>
+							<strong>$p-m: 20px</strong>
+						</p>
+						<p>
+							<strong>$p-l: 25px</strong>
+						</p>
+						<p>
+							<strong>$p-xl: 30px</strong>
+						</p>
+						<p>
+							<strong>$p-xxl: 40px</strong>
+						</p>
+					</div>
 
-				<ul class="o-list__none">
-					<li>This is a list item with style type</li>
-				</ul>
-				<ul class="o-list__disc">
-					<li>
-						This is a list item in an unordered list
-						<ul class="o-list__disc">
-							<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-						</ul>
-					</li>
-				</ul>
-
-				<ul class="o-list__decimal">
-					<li>
-						This is a list item in an decimal list
-
-						<ul class="o-list__decimalZero">
-							<li>This is a children list</li>
-						</ul>
-					</li>
-				</ul>
-
-				<ul class="o-list__upperAlpha">
-					<li>
-						This is a list item in a upper alpha list
-					</li>
-				</ul>
-				
-				<ul class="o-list__lowerAlpha">
-					<li>
-						This is a list item in a lower alpha list
-					</li>
-				</ul>
-
-				<ul class="o-list__lowerRoman">
-					<li>
-						This is a list item in a lower alpha list
-					</li>
-				</ul>
-
-				<ul class="o-list__upperRoman">
-					<li>
-						This is a list item in a upper alpha list
-					</li>
-				</ul>
-
-				<ul class="o-list__square">
-					<li>
-						This is a list item in a lower alpha list
-					</li>
-				</ul>
-			</div>
-
-			<div class="sg-content" id="table">
-				<h2 class="sg-title--secondary">TABLE</h2>
-
-				<table class="o-table o-table__border o-table__collapse">
-					<thead>
-						<tr>
-							<th>#</th>
-							<th>Name</th>
-							<th>Example Text</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>Bruce Wayne</td>
-							<td>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error est porro deserunt blanditiis eos, labore nostrum quasi tempora explicabo? Impedit commodi dolorum eaque, corrupti ullam harum sint, cumque mollitia alias!
-							</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Diana Prince</td>
-							<td>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error est porro deserunt blanditiis eos, labore nostrum quasi tempora explicabo? Impedit commodi dolorum eaque, corrupti ullam harum sint, cumque mollitia alias!
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-			<div class="sg-content" id="inline-elements">
-				<h2 class="sg-title--secondary">Inline Elements</h2>
-				<p>
-					<a href="javascript:void(0);">This text is a link</a>
-				</p>
-				<p>
-					<i>This text is an italic</i>
-				</p>
-				<p>
-					<strong>This element is bold</strong>
-				</p>
-				<p>
-					<u>This text used for underlined element</u>
-				</p>
-				<p>
-					<del>This text mark as delete</del>
-				</p>
-				<p>
-					Superscript: <samp>8<sup>th</sup> of August</samp>
-				</p>
-				<p>
-					Subscript: <samp>H<sub>2</sub>O</samp>
-				</p>
-				<p>
-					<mark>Mark element</mark>
-				</p>
-				<p>
-					<q>This text has a quote</q>
-				</p>
-			</div>
-			
-		</div><!-- end of sg-wrap -->
-	
+					<div class="sg-example sg-varspacing">
+						<h3 class="sg-title--secondary">Margin</h3>
+						<p>
+							<strong>$m-none: 0</strong>
+						</p>
+						<p>
+							<strong>$m-xxs: 5px</strong>
+						</p>		
+						<p>
+							<strong>$m-xs: 10px</strong>
+						</p>
+						<p>
+							<strong>$m-s: 15px</strong>
+						</p>
+						<p>
+							<strong>$m-m: 20px</strong>
+						</p>
+						<p>
+							<strong>$m-l: 25px</strong>
+						</p>
+						<p>
+							<strong>$m-xl: 30px</strong>
+						</p>
+						<p>
+							<strong>$m-xxl: 40px</strong>
+						</p>
+					</div>
+					
+				</div>	
+			</section>
+		
+		</div>
 	</body>
 </html>
 

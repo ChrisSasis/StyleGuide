@@ -1,246 +1,132 @@
-/* STYLGUIDE */
+/* 
+ * STYLEGUIDE
+ * for styleguide purposes only
+ * 
+*/
 
-.sg-wrap{
-	// background:#ececec;
-	max-width:1000px;
-	margin:0 auto;
-	padding:$padding-m;
+.sg-wrap {
+	@include align-center(800px, 0);
+	padding:$p-l $p-none;
+}
+
+.sg-shadow {
+	@include box-shadow(0px,0px,4px,rgba(0,0,0,0.2));
+	padding:$p-s;
 }
 
 .sg-title {
-	text-align: center;
+	padding:$p-s $p-none;
 }
 
 .sg-title--secondary {
-	text-align: left;
-	padding:$padding-s;
+	color:#878080;
 }
 
-.sg-paragraph {
-	font-size: 12px;
-	padding:$padding-xs $padding-none;
+.sg-content {
+	background-color: $c-white;
+	padding:$p-s;
+	margin-bottom:$m-s;
 }
 
-.sg-content{
-	padding:$padding-m $padding-none;
+/* sg content */
+code {
+	display: block;
+	padding:$p-s;
+	background-color: #333333;
+	color:$c-white;
+	margin:$m-xxs $m-none;
 }
 
-/* cards */
-.sg-card{
-	background-color:$white;
-	border:1px solid $default;
-	padding:$padding-m;
-	margin-bottom: 3px;
+.sg-example{
+	padding:$p-s;
+	margin:$m-s $m-none;
+	font-size: em(12);
 }
 
-/* colors */
-.sg-card--color{
-	display: inline-block;
-	width:30%;
-	margin-bottom:3px;
-}
-.sg-color{
-	width:100%;
-	height:20px;
-}
-.sg-color--name{
-	padding:$padding-s $padding-none;
-	font-weight: bold;
-}
+/* MIXINS */
 
-.sg-color--hex{
-	padding:$padding-s $padding-none;
-}
+	/* ALIGNMENT */
 
-.sg-code{
-	border:1px solid;
-	padding:$padding-s $padding-m;
-	color:$white;
-	background-color: #1d1f20;
-	font-size: 12px;
-	margin:$margin-xs $margin-none;
-}
-
-.sg-main{
-	.sg-color {
-		background-color: $brand-main;
-	}
-	.sg-color--name,.sg-color--hex{
-		color:$brand-main;
-	}
-}
-
-.sg-main--darken{
-	.sg-color {
-		background-color: $brand-main-darken;
-	}
-	.sg-color--name,.sg-color--hex{
-		color:$brand-main-darken;
-	}
-}
-
-.sg-secondary{
-	.sg-color {
-		background-color: $brand-secondary;
-	}
-	.sg-color--name,.sg-color--hex{
-		color:$brand-secondary;
-	}
-}
-
-.sg-secondary--darken{
-	.sg-color {
-		background-color: $brand-secondary-darken;
-	}
-	.sg-color--name,.sg-color--hex{
-		color:$brand-secondary-darken;
-	}
-}
-
-.sg-error{
-	.sg-color {
-		background-color: $error;
-	}
-	.sg-color--name,.sg-color--hex{
-		color:$error;
-	}
-}
-
-.sg-success{
-	.sg-color {
-		background-color: $success;
-	}
-	.sg-color--name,.sg-color--hex{
-		color:$success;
-	}
-}
-
-.sg-default{
-	.sg-color {
-		background-color: $default;
-	}
-	.sg-color--name,.sg-color--hex{
-		color:$default;
-	}
-}
-
-.sg-warning{
-	.sg-color {
-		background-color: $warning;
-	}
-	.sg-color--name,.sg-color--hex{
-		color:$warning;
-	}
-}
-
-/* TYPOGRAPHY */
-
-
-.sg-typoCard {
-	width:48%;
-	display: inline-block;
-	vertical-align: top;
-}
-.sg-fontLightest{
-	.sg-font--name{
-		font-weight: $lightest;
-	}
-}
-
-.sg-fontLighter{
-	.sg-font--name{
-		font-weight: $lighter;
-	}
-}
-
-.sg-fontLight{
-	.sg-font--name{
-		font-weight: $light;
-	}
-}
-
-.sg-fontRegular{
-	.sg-font--name{
-		font-weight: $regular;
-	}
-}
-
-.sg-fontSemiMedium{
-	.sg-font--name{
-		font-weight: $semi-medium;
-	}
-}
-
-.sg-fontMedium{
-	.sg-font--name{
-		font-weight: $medium;
-	}
-}
-
-.sg-fontBold{
-	.sg-font--name{
-		font-weight: $bold;
-	}
-}
-
-.sg-fontBolder{
-	.sg-font--name{
-		font-weight: $bolder;
-	}
-}
-
-.sg-fontBoldest{
-	.sg-font--name{
-		font-weight: $boldest;
-	}
-}
-
-.sg-ellipsis {
-	@include text-truncate;
-	width:40%;
-}
-
-/* BUTTON */
-.sg-buttons {
-	display: inline-block;
-	vertical-align: top;
-	width: 45%;
-}
-
-/* Gradient */
-
-.sg-gradients {
-	max-height:300px;
-	overflow: hidden;
-}
-
-.sg-gradientBox {
-	height:100px;
-}
-
-.sg-linear--ttb {
-	@include linear-direction(to left, $brand-main, $brand-secondary);
-}
-
-.sg-menusidebar {
-	background:$brand-main;
-	width:10%;
-	position: fixed;
-	top:20%;
-	ul {
-		list-style-type: none;
-		margin:0;
-		padding:0;
+	.sg-aligncenter {
+		@include align-center(200px, 0);
 	}
 
-	a{
-		padding:10px;
-		display: block;
-		text-decoration: none;
-		color:$white;
+	/* BORDER */
+	.sg-borderall {
+		@include border-all(5px,solid,green);
+	}
 
-		&:hover{
-			background: $brand-main-darken;
+	.sg-bordertop {
+		@include border-top(5px, solid, green);
+	}
+
+	.sg-borderbottom{
+		@include border-bottom(5px, solid, green);
+	}
+
+	.sg-borderleft{
+		@include border-left(5px, solid, green);
+	}
+
+	.sg-borderright{
+		@include border-right(5px, solid, green);
+	}
+
+	/* ELLIPSIS */
+
+	.sg-for-ellipsis {
+		@include ellipsis;
+		width: 100%;
+	}
+
+	/* FONT MIXIN */
+
+	/* HOVER MIXIN */
+	.sg-hoverbg {
+		background-color: green;
+		cursor:pointer;
+		@include hover-bg(blue);
+	}
+
+	.sg-hovertextbg {
+		cursor:pointer;
+		@include hover-text-bg(blue, $c-white);
+	}
+
+	/* SHADOW */
+
+	.sg-boxshadow {
+		@include box-shadow(1px, 0px, 20px, rgba(0,0,0,0.4));
+	}
+
+	.sg-insetshadow {
+		@include inset-shadow(1px, 0px, 20px, rgba(0,0,0,0.4));
+	}
+
+	.sg-textshadow {
+		h3 {
+			@include text-shadow(2px,5px, rgba(0,0,0,0.4));
 		}
 	}
-}
+/* END OF MIXINS */
+
+/* VARIABLES */
+	
+	/* COLORS */
+	.sg-color {
+		margin:0;
+	}
+	
+	/* FONT */
+
+	.sg-varFont {
+		margin:0;
+	}
+	
+	/* SPACING */
+
+	.sg-varspacing {
+		margin:0;
+	}
+	
+/* END OF VARIABLES */
