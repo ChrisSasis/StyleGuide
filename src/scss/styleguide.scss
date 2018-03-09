@@ -73,27 +73,27 @@ code {
 	}
 
 	/* CORNER */
-	.sg-borderradius {
+	.sg-cornerradius {
 		border:solid;
 		@include border-radius(100px);
 	}
 
-	.sg-bordertop {
+	.sg-cornertop {
 		border:solid;
 		@include border-top-radius(100px);
 	}
 
-	.sg-borderright {
+	.sg-cornerright {
 		border:solid;
 		@include border-right-radius(100px);
 	}
 
-	.sg-borderbottom {
+	.sg-cornerbottom {
 		border:solid;
 		@include border-bottom-radius(100px);
 	}
 
-	.sg-borderleft {
+	.sg-cornerleft {
 		border:solid;
 		@include border-left-radius(100px);
 	}
