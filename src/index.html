@@ -567,9 +567,80 @@
 					<code>
 						.o-list__lowerRoman
 					</code>
-
 				</div>
 
+				<!-- INPUT -->
+				<div class="sg-content">
+					<h2 class="sg-title">Inputs</h2>
+
+					<div class="o-input__wrap">
+						<input type="text" class="o-input">
+					</div>
+
+					<code>.o-input</code>
+					
+					<div class="o-input__wrap">
+						<div class="o-input__holder">
+							<input type="text" class="o-input">
+						</div>
+						<div class="o-input__icon">
+							<i class="fas fa-angle-right"></i>	
+						</div>
+					</div>
+
+					<code>
+						.o-input__wrap > .o-input__holder > .o-input, .o-input__icon
+					</code>
+
+
+					<div class="o-input__wrap o-input__wrap--reverse">
+						<div class="o-input__holder">
+							<input type="text" class="o-input">
+						</div>
+						<div class="o-input__icon">
+							<i class="fas fa-angle-right"></i>	
+						</div>
+					</div>
+
+					<code>
+						.o-input__wrap .o-input__wrap--reverse > .o-input__holder > .o-input, .o-input__icon
+					</code>
+
+					<p>To make the icon position to the right side add .o-input__wrap--reverse</p>
+					
+					<div class="o-input__form">
+						<div class="o-input__wrap ">
+							<input type="text" class="o-input">
+						</div>
+						<button class="o-btn__primary">Submit</button>
+
+					</div>
+
+					<code>
+						.o-input__form > .o-input__wrap > .o-input , .o-btn__primary
+					</code>
+
+					<h2 class="sg-title">Textarea</h2>
+					
+					<textarea name="" id="" cols="30" rows="10" class="o-textarea"></textarea>
+
+					<code>
+						.o-textarea
+					</code>
+
+					<p>
+						<strong>.o-textarea--noResize</strong> - to remove resizing of the textarea
+					</p>
+
+					<p> 
+						<strong>.o-textarea--noBorder</strong> - to remove the border of the textarea
+					</p>
+
+					<h2 class="sg-title">Radio</h2>
+					<input type="radio" name="radio" id="radio" class="o-input__radio">
+					<label for="radio"><span></span>Radio Button</label>
+					
+				</div>
 
 			</div>
 		
