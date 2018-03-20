@@ -66,3 +66,14 @@
 .o-textarea--noBorder {
 	border: none;
 }
+
+/* radio button */
+
+.o-input__radio {
+	display: none;
+
+	+ label span {
+		display: inline-block;
+		
+	}
+}
