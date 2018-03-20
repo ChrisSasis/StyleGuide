@@ -1,5 +1,79 @@
 /* INPUTS */
 
-input, textarea {
-	outline: none;
+.o-input {
+	width:100%;
+	// padding:$p-xs;
+	font-size: em(15);
+	border:none;
+}
+
+/* with icon */
+
+.o-input__wrap {
+	@include border-all(1px, solid, $c-black);
+	padding:$p-xxs $p-xxs;
+	position: relative;
+	margin:$m-xxs $m-none;
+}
+.o-input__icon {
+	padding:$p-none $p-xs ;
+	position: absolute;
+	top:5px;
+}
+
+.o-input__holder {
+	width: 100%;
+	padding-left:$p-xl;
+}
+
+.o-input__wrap--reverse {
+	.o-input__icon{
+		right:5px;
+	}
+
+	.o-input__holder {
+		padding-left:0;
+		padding-right:$p-xl;
+	}
+}
+
+/* input with submit button */
+
+.o-input__form {
+	display: table;
+	width: 100%;
+
+	.o-input__wrap {
+		display: table-cell;
+		width: 100%;
+	}
+
+	.o-btn__primary {
+		display: table-cell;
+	}
+}
+
+/* textarea */
+.o-textarea {
+	max-width:100%;
+	width:100%;
+}
+
+.o-textarea--noResize {
+	resize:none;
+}
+
+.o-textarea--noBorder {
+	border: none;
+}
+
+/* radio button */
+
+.o-input__radio {
+	display: none;
+
+	+ label span {
+		display: inline-block;
+		
+	}
 }

@@ -1,0 +1,19 @@
+/* ACCORDION */
+
+.c-accordion__title {
+	@include border-all(1px, solid, $c-primary);
+	padding:$p-s;
+}
+
+.c-accordion__content {
+	padding:$p-s;
+}
+
+// optional show hide
+.c-accordion--active {
+	display: block;
+}
+
+.c-accordion--inactive {
+	display: none;
+}
