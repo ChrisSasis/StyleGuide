@@ -640,15 +640,37 @@
 					<h2 class="sg-title">Radio</h2>
 
 					<div class="c-radio__wrap">
-						<input type="radio" name="radio" id="radio" class="">
+						<input type="radio" name="radio" id="radio">
 						<label for="radio" class="c-radio--label"><span></span>Radio Button</label>
 					</div>
+					<code>
+						.c-radio__wrap > .c-radio--label
+					</code>
 
 					<h2 class="sg-title">Checkbox</h2>
 					<input class="c-checkbox__wrap" id="styled-checkbox-1" type="checkbox" value="value1">
 				    <label for="styled-checkbox-1">Checkbox</label>
+
+				    <code>
+				    	.c-checkbox__wrap &amp; label
+				    </code>
+				</div>
+
+				<!-- IMAGE -->
+				<div class="sg-content">
+					<h2 class="sg-title">Image</h2>
+					<div class="c-image__wrap">
+						<img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=468a8c18f5d811cf03c654b653b5089e&auto=format&fit=crop&w=1050&q=80" alt="">
+					</div>
+
+					<code>
+						.c-image__wrap > img tag
+					</code>
 				</div>
 			</div>
+
+			<!-- GRID -->
+
 
 			<!-- ACCORDION -->
 			<div class="sg-section">
@@ -666,7 +688,7 @@
 
 					<div class="c-accordion__wrap">
 						<div class="c-accordion__title">
-							<h3>Accordion 2</h3>	
+								<h3>Accordion 2</h3>	
 						</div>
 						<div class="c-accordion__content c-accordion--inactive">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sit explicabo, ipsum vitae exercitationem est atque dignissimos amet pariatur libero sequi ullam, excepturi dolorum eius, ea maxime quasi cupiditate ducimus.</p>
@@ -674,7 +696,6 @@
 					</div>
 
 				</div>
-
 			</div>
 		
 		</div>
