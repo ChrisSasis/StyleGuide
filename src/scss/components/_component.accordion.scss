@@ -3,6 +3,7 @@
 .c-accordion__title {
 	@include border-all(1px, solid, $c-primary);
 	padding:$p-s;
+	cursor: pointer;
 }
 
 .c-accordion__content {
