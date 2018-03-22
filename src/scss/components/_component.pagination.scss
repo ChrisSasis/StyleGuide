@@ -1,0 +1,45 @@
+/* PAGINATION */
+
+.c-pagination {
+	position: relative;
+}
+
+.c-pagination__pages {
+	display: inline-flex;
+	justify-content:center;
+	padding:0;
+	margin:0;
+	width: 100%;
+}
+
+.c-pagination__listLink {
+	display: block;
+	padding:$p-xxs $p-xs;
+	color:$c-secondary;
+	text-decoration: none;
+	@include hover-text-bg($c-secondary, $c-white);
+}
+
+.c-pagination--active {
+	background-color:$c-secondary;
+	
+	.c-pagination__listLink {
+		color:$c-white;
+	}
+}
+
+/* CTA */
+.c-pagination__next {
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+}
+
+
+.c-pagination__prev {
+	position: absolute;
+	top:0;
+	right:0;
+	height: 100%;
+}
