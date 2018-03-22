@@ -4,9 +4,44 @@
  * 
 */
 
+/* 
+ * STYLEGUIDE HEADER
+ * for sample purposes only
+*/
+
+.sg-header {
+	background:$c-primary;
+	position: fixed;
+	width:100%;
+	z-index: 100;
+}
+
+.sg-header__list {
+	display: inline-flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	width: 100%;
+	padding:$p-none;
+	margin:$m-none;
+}
+
+.sg-header__listLink {
+	text-decoration: none;
+	color:$c-white;
+	padding:$p-s;
+	display: block;
+	@include hover-text-bg(red, $c-white);
+}
+
+/*  */
+
 .sg-wrap {
 	@include align-center(800px, 0);
 	padding:$p-l $p-none;
+}
+
+.sg-section {
+    padding-top: 70px;
 }
 
 .sg-shadow {
