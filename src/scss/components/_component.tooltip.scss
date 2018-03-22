@@ -1,0 +1,143 @@
+/* TOOLTIP */
+.c-tooltip {
+	@include border-all(1px,solid,$c-black);
+	@include border-radius(5px);
+	padding:$p-s;
+	position: relative;
+}
+
+.c-tooltip__arrowLeft {
+	&:before {
+		content: '';
+		width:0;
+		height:0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 10px solid $c-black;
+		position: absolute;
+		top:0px;
+		bottom:0px;
+		left:-10px;
+		margin:auto;
+	}
+
+	&:after {
+		content: '';
+		width:0;
+		height:0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 10px solid $c-white;
+		position: absolute;
+		top:0px;
+		bottom:0px;
+		left:-9px;
+		margin:auto;
+	}
+}
+
+.c-tooltip__arrowRight {
+	&:before {
+		content: '';
+		width:0;
+		height:0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 10px solid $c-black;
+		position: absolute;
+		top:0px;
+		bottom:0px;
+		right:-10px;
+		margin:auto;
+	}
+
+	&:after {
+		content: '';
+		width:0;
+		height:0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 10px solid $c-white;
+		position: absolute;
+		top:0px;
+		bottom:0px;
+		right:-9px;
+		margin:auto;
+	}
+}
+
+.c-tooltip__arrowTop {
+	&:before {
+		content: '';
+		width:0;
+		height:0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid $c-black;
+		position: absolute;
+		top:-10px;
+		left:0;
+		right:0;
+		margin:0 auto;
+	}
+
+	&:after {
+		content: '';
+		width:0;
+		height:0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid $c-white;
+		position: absolute;
+		top:-9px;
+		left:0;
+		right:0;
+		margin:0 auto;
+	}
+}
+
+.c-tooltip__arrowBottom {
+	&:before {
+		content: '';
+		width:0;
+		height:0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid $c-black;
+		position: absolute;
+		bottom:-10px;
+		left:0;
+		right:0;
+		margin:0 auto;
+	}
+
+	&:after {
+		content: '';
+		width:0;
+		height:0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid $c-white;
+		position: absolute;
+		bottom:-9px;
+		left:0;
+		right:0;
+		margin:0 auto;
+	}
+}
+
+.c-tooltip--leftPosition {
+	&:before, &:after{
+		left:15px;
+		right:auto;
+		margin:0;
+	}
+}
+
+.c-tooltip--rightPosition {
+	&:before, &:after{
+		left:auto;
+		right:15px;
+		margin:0;
+	}
+}
