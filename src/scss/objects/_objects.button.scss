@@ -55,3 +55,16 @@
 .o-btn__disabled {
 	@extend %o-btn;
 }
+
+/* pagination buttons */
+.o-pagination__btn--next {
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.o-pagination__btn--prev {
+	position: absolute;
+	top:0;
+	right:0;
+}

@@ -1,0 +1,33 @@
+/* BREADCRUMBS */
+.c-breadcrumbs {
+	padding:$p-xs;
+}
+
+.c-breadcrumbs__list {
+	text-decoration: none;
+	position: relative;
+	padding-left:$p-xs;
+	color: $c-primary;
+	font-weight: $bold;
+
+	&:before {
+		content:"/";
+		position: absolute;
+		left:0;
+		top:0;
+		bottom:0;
+		margin:auto;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+
+	&:first-child{
+		padding-left:$p-none;
+		&:before {
+			content:"";
+		}
+	}
+}
